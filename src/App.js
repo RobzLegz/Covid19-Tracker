@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {MenuItem, FormControl, Select, Card, CardContent} from '@material-ui/core'; 
 import './App.css';
+import InfoCard from './InfoCard';
 
 function App() {
 
@@ -42,7 +43,7 @@ function App() {
         </FormControl>
       </div>
       <div className="app-cards">
-        
+        <InfoCard />
       </div>      
     </div>
   );
