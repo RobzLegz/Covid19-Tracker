@@ -43,7 +43,9 @@ function App() {
         </FormControl>
       </div>
       <div className="app-cards">
-        <InfoCard />
+        <InfoCard title="Coronavirus Cases" cases={123} total={2000}/>
+        <InfoCard title="Recovered" />
+        <InfoCard title="Deaths" />
       </div>      
     </div>
   );
