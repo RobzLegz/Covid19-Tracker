@@ -7,6 +7,7 @@ import Table from "./Table";
 import {sortData} from "./util";
 import LineGraph from "./LineGraph";
 import "leaflet/dist/leaflet.css";
+import {prettyPrintStat} from "./util";
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
   const [mapCenter, setMapCenter] = useState({ lat: 34.80746, lng: -40.4796 });
   const [mapZoom, setMapZoom] = useState(3);
   const [mapCountries, setMapCountries] = useState([]);
+  const [casesType, setCasesType] = useState("cases");
 
   useEffect(() => {
     const getCountryData = async () => {
@@ -75,11 +77,11 @@ function App() {
           </FormControl>
         </div>
         <div className="app-cards">
-          <InfoCard title="Coronavirus Cases" cases={countryInfo.todayCases} total={countryInfo.cases}/>
-          <InfoCard title="Recovered" cases={countryInfo.todayRecovered} total={countryInfo.recovered}/>
-          <InfoCard title="Deaths" cases={countryInfo.todayDeaths} total={countryInfo.deaths}/>
+          <InfoCard title="Coronavirus Cases" cases={prettyPrintStat(countryInfo.todayCases)} total={prettyPrintStat(countryInfo.cases)} onClick={e => setCasesType("cases")} />
+          <InfoCard title="Recovered" cases={prettyPrintStat(countryInfo.todayRecovered)} total={prettyPrintStat(countryInfo.recovered)} onClick={e => setCasesType("recovered")} />
+          <InfoCard title="Deaths" cases={prettyPrintStat(countryInfo.todayDeaths)} total={prettyPrintStat(countryInfo.deaths)} onClick={e => setCasesType("deaths")} />
         </div>      
-        <Map center={mapCenter} zoom={mapZoom} countries={mapCountries}/>
+        <Map casesType={casesType} center={mapCenter} zoom={mapZoom} countries={mapCountries}/>
       </div>
       <Card className="app-right">
         <CardContent>
