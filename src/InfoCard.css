@@ -1,5 +1,6 @@
 .info-card {
   flex: 1;
+  cursor: pointer;
 }
 .info-card:not(:last-child) {
   margin-right: 15px;
@@ -15,4 +16,19 @@
   font-weight: 700 !important;
   font-size: 0.8rem !important;
   margin-top: 15px !important;
+}
+.infoBox--selected {
+  border-top: 10px solid rgb(85, 182, 214);
+}
+.infoBox--red {
+  border-color: rgb(163, 16, 16);
+}
+.infoBox--gray {
+  border-color: rgb(66, 65, 65);
+}
+.infobox-cases--green {
+  color: rgb(85, 182, 214) !important;
+}
+.infobox-cases--gray {
+  color: rgb(66, 65, 65) !important;
 }

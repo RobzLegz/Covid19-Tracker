@@ -77,9 +77,9 @@ function App() {
           </FormControl>
         </div>
         <div className="app-cards">
-          <InfoCard title="Coronavirus Cases" cases={prettyPrintStat(countryInfo.todayCases)} total={prettyPrintStat(countryInfo.cases)} onClick={e => setCasesType("cases")} />
-          <InfoCard title="Recovered" cases={prettyPrintStat(countryInfo.todayRecovered)} total={prettyPrintStat(countryInfo.recovered)} onClick={e => setCasesType("recovered")} />
-          <InfoCard title="Deaths" cases={prettyPrintStat(countryInfo.todayDeaths)} total={prettyPrintStat(countryInfo.deaths)} onClick={e => setCasesType("deaths")} />
+          <InfoCard isRed active={casesType === "cases"} title="Coronavirus Cases" cases={prettyPrintStat(countryInfo.todayCases)} total={prettyPrintStat(countryInfo.cases)} onClick={e => setCasesType("cases")} />
+          <InfoCard isBlue active={casesType === "recovered"} title="Recovered" cases={prettyPrintStat(countryInfo.todayRecovered)} total={prettyPrintStat(countryInfo.recovered)} onClick={e => setCasesType("recovered")} />
+          <InfoCard isGray active={casesType === "deaths"} title="Deaths" cases={prettyPrintStat(countryInfo.todayDeaths)} total={prettyPrintStat(countryInfo.deaths)} onClick={e => setCasesType("deaths")} />
         </div>      
         <Map casesType={casesType} center={mapCenter} zoom={mapZoom} countries={mapCountries}/>
       </div>
