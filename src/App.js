@@ -23,7 +23,7 @@ function App() {
           name: country.country,
           value: country.countryInfo.iso2
         }));
-        const sortedData = sortData(data);
+        let sortedData = sortData(data);
         setTableData(sortedData);
         setCountries(countries);
       });
@@ -33,11 +33,11 @@ function App() {
 
   useEffect(() => {
     fetch("https://disease.sh/v3/covid-19/all")
-    .then((response) => response.json())
-    .then((data) => {
-      setCountryInfo(data);
-    })
-  }, [])
+      .then((response) => response.json())
+      .then((data) => {
+        setCountryInfo(data);
+      });
+  }, []);
 
   const onCountryChange = async (event) => {
     const countryCode = event.target.value;
