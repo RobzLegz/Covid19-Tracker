@@ -3,12 +3,14 @@ import {MenuItem, FormControl, Select, Card, CardContent} from '@material-ui/cor
 import './App.css';
 import InfoCard from './InfoCard';
 import Map from "./Map";
+import Table from "./Table";
 
 function App() {
 
   const [countries, setCountries] = useState([]);
   const [country, setCountry] = useState("worldwide");
   const [countryInfo, setCountryInfo] = useState({});
+  const [tableData, setTableData] = useState([]);
 
   useEffect(() => {
     const getCountryData = async () => {
@@ -19,6 +21,7 @@ function App() {
           name: country.country,
           value: country.countryInfo.iso2
         }));
+        setTableData(data);
         setCountries(countries);
       });
     };
@@ -71,6 +74,7 @@ function App() {
       <Card className="app-right">
         <CardContent>
           <h3>Live Cases by Country</h3>
+          <Table countries={tableData} />
           <h3>Worldwide new cases</h3>
         </CardContent>
       </Card>
