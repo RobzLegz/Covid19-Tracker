@@ -4,7 +4,7 @@
 
 ### Screenshots:
 
-<img src="mapcasesnew.png">
+<img src="screenshots/mapcasesnew.png">
 
 ### `npm start`
 
