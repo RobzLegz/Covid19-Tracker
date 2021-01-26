@@ -10,8 +10,8 @@
 <img src="screenshots/mapchinacases.png">
 
 # Mobile responsive design:
-<img src="screenshots/mapcasesnew.png">
-<img src="screenshots/mapcasesnew.png">
+<img src="screenshots/mobileresponsive1.png">
+<img src="screenshots/ewsponsivedesign2.png">
 
 
 ### `npm start`
