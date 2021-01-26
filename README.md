@@ -1,4 +1,4 @@
-<video src="screenshots/corona-viedo.mkv"></video>
+[![Watch the video](https://www.youtube.com/watch?v=FhG_SNdOW00)
 
 ### `npm start`
 
