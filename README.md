@@ -18,7 +18,10 @@
 - I learned how to fetch information from api
 - I know a little bit more about useState() and useEffect()
 
-## `npm start`
+# Instructions:
+- 1. Download code
+- 2. In terminal type "npm i"
+### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
