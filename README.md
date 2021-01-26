@@ -1,4 +1,4 @@
-[![Watch the video](https://www.youtube.com/watch?v=FhG_SNdOW00)
+[<img src="https://img.youtube.com/vi/<VIDEO ID>/maxresdefault.jpg" width="50%">](https://youtu.be/<VIDEO ID>)
 
 ### `npm start`
 
