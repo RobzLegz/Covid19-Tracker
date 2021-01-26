@@ -13,6 +13,10 @@
 <img src="screenshots/mobileresponsive1.png">
 <img src="screenshots/ewsponsivedesign2.png">
 
+## What I learned?
+- I learned how to pass props from element to element
+- I learned how to fetch information from api
+- I know a little bit more about useState() and useEffect()
 
 ## `npm start`
 
