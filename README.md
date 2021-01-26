@@ -19,8 +19,8 @@
 - I know a little bit more about useState() and useEffect()
 
 # Instructions:
-- 1. Download code
-- 2. In terminal type "npm i"
+- Download code
+- In terminal type "npm i"
 ### `npm start`
 
 Runs the app in the development mode.\
