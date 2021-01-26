@@ -5,6 +5,9 @@
 ### Screenshots:
 
 <img src="screenshots/mapcasesnew.png">
+<img src="screenshots/maprecowerynew.png">
+<img src="screenshots/alldeathsnewmap.png">
+<img src="screenshots/mapcasesnew.png">
 
 ### `npm start`
 
