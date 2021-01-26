@@ -9,6 +9,11 @@
 <img src="screenshots/alldeathsnewmap.png">
 <img src="screenshots/mapchinacases.png">
 
+# Mobile responsive design:
+<img src="screenshots/mapcasesnew.png">
+<img src="screenshots/mapcasesnew.png">
+
+
 ### `npm start`
 
 Runs the app in the development mode.\
