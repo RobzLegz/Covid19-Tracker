@@ -1,4 +1,4 @@
-<img src="screenshots/map-deaths-all.png">(https://youtu.be/T-D1KVIuvjA)
+<a href="https://youtu.be/T-D1KVIuvjA"><img src="screenshots/map-deaths-all.png"></a>
 
 ### `npm start`
 
