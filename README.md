@@ -1,4 +1,4 @@
-<video src="screenshots/corona-viedo.mkv" autoplay></video>
+<video src="screenshots/corona-viedo.mkv"></video>
 
 ### `npm start`
 
