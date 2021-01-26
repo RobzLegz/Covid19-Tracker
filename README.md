@@ -1,6 +1,10 @@
-### Video
+### Video:
 
 <a href="https://www.youtube.com/watch?v=FhG_SNdOW00"><img src="screenshots/map-deaths-all.png"></a>
+
+### Screenshots:
+
+<img src="mapcasesnew.png">
 
 ### `npm start`
 
